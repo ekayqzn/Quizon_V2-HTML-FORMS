@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-pic-container">
+      <img class="logo-pic" src="logo.png"/>
+    </div>
+    <div class="title">
+      <h1>Cuiise Expedtion Order Form</h1>
+    </div>
+    <div class="title">
+      <h4>Every dish is a discovery and every flavor tells a story</h4>
+    </div>
+    <div class="title">
+      <p>Fill out the form to place your order.</p>
+    </div>
+  </header>
+  <form class="form">
+    <div class="form-row">
+      <label>Name</label>
+      <input id="full-name" type="text">
+    </div>
+    <div class="form-row">
+      <label>Email</label>
+      <input id="email" type="email" placeholder="abcde@gmail.com">
+    </div>
+    <div class="form-row">
+      <label>Age</label>
+      <input id="age" type="text">
+    </div>
+    <div id="dropdown" class="dropdown-container">
+      <button class="dropdown-toggle">
+        <span>Type of Cuisine</span>
+        <i class="fa-solid fa-caret-down"></i>
+      </button>
+      <ul class="menu">
+        <li class="menu-item"><a href="#">Italian</a></li>
+        <li class="menu-item"><a href="#">Chinese</a></li>
+        <li class="menu-item dropdown">
+          <a href="#" class="submenu-toggle">
+            <span>Healthy Options</span>
+            <i class="fa-solid fa-caret-right"></i>
+          </a>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="#">Vegetarian</a></li>
+            <li class="submenu-item"><a href="#">Vegan</a></li>
+            <li class="submenu-item"><a href="#">Gluten-Free</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="#">Mexican</a></li>
+        <li class="menu-item dropdown">
+          <a href="#" class="submenu-toggle">
+            <span>Specials</span>
+            <i class="fa-solid fa-caret-right"></i>
+          </a>
+          <ul class="submenu"></ul>
+        </li>
+      </ul>
+    </div>
+    <fieldset class='radio-form-row'>
+      <legend>Dining</legend>
+      <input id='dining-1'
+      name='dining'
+      type='radio'
+      value='dine-in'checked>
+      <label for='dining-1' class='radio-label'>Dine-in</label>
+      <input id='dining-2' name='dining' type='radio' value='take-out'>
+      <label for='dining-2' class='radio-label'>Take-out</label>
+    </fieldset>
+    <fieldset class='radio-form-row-2'>
+      <legend>Mode of Payment</legend>
+      <input id='payment-1'
+      name='payment-type'
+      type='radio'
+      value='cod'checked>
+      <label for='payment-1' class='radio-label'>Cash On Delivery</label>
+      <input id='payment-2' name='payment-type' type='radio' value='card'>
+      <label for='payment-2' class='radio-label'>Credit/Debit card</label>
+    </fieldset>
+    <div class='form-row'>
+      <label for='comments'>Comments</label>
+      <textarea id='comments' name='comments'></textarea>
+    </div>
+  </div>
+  <div class="button-container">
+    <div class="place-order-button-container">
+      <input type="button" value="Place Order" class="place-order-button">
+    </div>
+    <div class="cancel-button-container">
+      <input type="button" value="Cancel" class="cancel-button">
+    </div>
+  </div>
+  </form>
+  <footer class="footer">
+    <div class="logo-pic-container">
+      <img src="logo.png" class="logo-pic">
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
