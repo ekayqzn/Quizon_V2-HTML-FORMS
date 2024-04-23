@@ -22,6 +22,45 @@
   --TEXT-FONT: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --LIGHT-PINK: #e6b8b1;
+    --DARK-PINK: #d66e6d;
+    --GREEN: #a9a179;
+    --ORANGE: #d68763;
+    --DARK-ORANGE: #c06b45;
+    --BG-COLOR: #1f252b;
+    --TEXT-COLOR: #f5f5f5;
+  }
+
+  .header__logo img {
+    filter: invert(79%) sepia(39%) saturate(282%) hue-rotate(317deg)
+      brightness(94%) contrast(91%);
+  }
+
+  form {
+    border-radius: 20px;
+    background: #a9a179;
+    box-shadow: inset 8px 8px 16px #4e4a38, inset -8px -8px 16px #fff8ba;
+  }
+
+  .main__product-selection-card {
+    border-radius: 20px;
+    background: #e6b8b1;
+    box-shadow: inset 8px 8px 16px #6a5551, inset -8px -8px 16px #ffffff;
+  }
+
+  .submit-button:hover {
+    background: #d66e6d;
+    box-shadow: inset 8px 8px 16px #b65e5d, inset -8px -8px 16px #f67f7d;
+  }
+
+  .reset-button:hover {
+    background: #f5f5f5;
+    box-shadow: inset 8px 8px 16px #c9c9c9, inset -8px -8px 16px #ffffff;
+  }
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
