@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 80vw;
+}
+.main__title {
+  font-family: var(--TITLE-FONT);
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.main__text {
+  font-family: var(--TEXT-FONT);
+  font-weight: 600;
+  text-align: justify;
+}
+
+h1 span,
+h2 span {
+  font-size: 3rem;
+}
+
+.main__title:hover {
+  color: var(--DARK-ORANGE);
+}

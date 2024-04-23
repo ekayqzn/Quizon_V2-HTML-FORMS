@@ -1,107 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Form</title>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-  <header class="header">
-    <div class="logo-pic-container">
-      <img class="logo-pic" src="logo.png"/>
-    </div>
-    <div class="title">
-      <h1>Cuiise Expedtion Order Form</h1>
-    </div>
-    <div class="title">
-      <h4>Every dish is a discovery and every flavor tells a story</h4>
-    </div>
-    <div class="title">
-      <p>Fill out the form to place your order.</p>
-    </div>
-  </header>
-  <form class="form">
-    <div class="form-row">
-      <label>Name</label>
-      <input id="full-name" type="text">
-    </div>
-    <div class="form-row">
-      <label>Email</label>
-      <input id="email" type="email" placeholder="abcde@gmail.com">
-    </div>
-    <div class="form-row">
-      <label>Age</label>
-      <input id="age" type="text">
-    </div>
-    <div id="dropdown" class="dropdown-container">
-      <button class="dropdown-toggle">
-        <span>Type of Cuisine</span>
-        <i class="fa-solid fa-caret-down"></i>
-      </button>
-      <ul class="menu">
-        <li class="menu-item"><a href="#">Italian</a></li>
-        <li class="menu-item"><a href="#">Chinese</a></li>
-        <li class="menu-item dropdown">
-          <a href="#" class="submenu-toggle">
-            <span>Healthy Options</span>
-            <i class="fa-solid fa-caret-right"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doughted.</title>
+    <link rel="icon" href="asset/img/logos/logo-TRANS.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__nav--logo">
+          <a href="index.html">
+            <img
+              src="asset/img/logos/DoughtedGray-TRANS.png"
+              alt="doughted-logo"
+              width="50"
+              height="200"
+            />
           </a>
-          <ul class="submenu">
-            <li class="submenu-item"><a href="#">Vegetarian</a></li>
-            <li class="submenu-item"><a href="#">Vegan</a></li>
-            <li class="submenu-item"><a href="#">Gluten-Free</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="#">Mexican</a></li>
-        <li class="menu-item dropdown">
-          <a href="#" class="submenu-toggle">
-            <span>Specials</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </a>
-          <ul class="submenu"></ul>
-        </li>
-      </ul>
-    </div>
-    <fieldset class='radio-form-row'>
-      <legend>Dining</legend>
-      <input id='dining-1'
-      name='dining'
-      type='radio'
-      value='dine-in'checked>
-      <label for='dining-1' class='radio-label'>Dine-in</label>
-      <input id='dining-2' name='dining' type='radio' value='take-out'>
-      <label for='dining-2' class='radio-label'>Take-out</label>
-    </fieldset>
-    <fieldset class='radio-form-row-2'>
-      <legend>Mode of Payment</legend>
-      <input id='payment-1'
-      name='payment-type'
-      type='radio'
-      value='cod'checked>
-      <label for='payment-1' class='radio-label'>Cash On Delivery</label>
-      <input id='payment-2' name='payment-type' type='radio' value='card'>
-      <label for='payment-2' class='radio-label'>Credit/Debit card</label>
-    </fieldset>
-    <div class='form-row'>
-      <label for='comments'>Comments</label>
-      <textarea id='comments' name='comments'></textarea>
-    </div>
-  </div>
-  <div class="button-container">
-    <div class="place-order-button-container">
-      <input type="button" value="Place Order" class="place-order-button">
-    </div>
-    <div class="cancel-button-container">
-      <input type="button" value="Cancel" class="cancel-button">
-    </div>
-  </div>
-  </form>
-  <footer class="footer">
-    <div class="logo-pic-container">
-      <img src="logo.png" class="logo-pic">
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
+        </div>
+
+        <ul class="header__nav--list">
+          <li><a href="/">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="order-form.html">Order</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main__hero">
+        <div class="main__hero-text">
+          <h1 data-aos="fade-down">
+            DOUGHTED<span class="dot">.</span> is devoted to offering you a
+            healthy option to satisfy your cravings
+          </h1>
+          <a href="order-form.html">
+            <button class="main_page-button">START NEW ORDER</button></a
+          >
+        </div>
+        <div class="main__hero-img pic-slider">
+          <img
+            src="asset/img/hero/float1-TRANS.png"
+            alt="Doughnut"
+            class="pic"
+          />
+          <img
+            src="asset/img/hero/float2-TRANS.png"
+            alt="Doughnut"
+            class="pic"
+          />
+          <img
+            src="asset/img/hero/float3-TRANS.png"
+            alt="Doughnut"
+            class="pic"
+          />
+          <img
+            src="asset/img/hero/float4-TRANS.png"
+            alt="Doughnut"
+            class="pic"
+          />
+        </div>
+      </section>
+
+      <section class="main__offer">
+        <div class="main__offer-text">
+          <h2>BEST TO OFFER <span>.</span></h2>
+          <p class="text-desc">you won't get enough</p>
+        </div>
+        <div class="main__offer-blob">
+          <div class="main__offer-blob-card">
+            <img
+              src="asset/img/best/best-peachmango-TRANS.png"
+              alt="Peach Mango"
+            />
+            <p>Peach Mango <span class="wrap"> Dough-nut-Pie </span></p>
+          </div>
+          <div class="main__offer-blob-card">
+            <img
+              src="asset/img/best/best-strawberry-TRANS.png"
+              alt="Peach Mango"
+            />
+            <p>Straw-merry</p>
+          </div>
+          <div class="main__offer-blob-card">
+            <img
+              src="asset/img//best/best-avocado-TRANS.png"
+              alt="Peach Mango"
+            />
+            <p>Avocadid</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__new">
+        <div class="main__new-text">
+          <h2>NEW FLAVOR TO TASTE<span class="dot">.</span></h2>
+          <p>we heard you</p>
+        </div>
+        <div class="main__new-img">
+          <div class="main__new-img-flavor-1">
+            <div class="main__new-img-container">
+              <img
+                src="asset/img/new/chocostrawberrynew-TRANS.png"
+                alt="choco-strawberry"
+              />
+              <p>Strawbe-late</p>
+            </div>
+          </div>
+          <div class="main__new-img-flavor-2">
+            <img
+              src="asset/img/new/pistachioavocadonew-TRANS.png"
+              alt="pistachio-avocado"
+            />
+            <p>Pista-cado</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__pack">
+        <div class="main__pack-text">
+          <h2>YOU DECIDE YOUR PACK<span class="dot">.</span></h2>
+          <p>get what you can eat</p>
+        </div>
+        <div class="main__pack-choices">
+          <div class="main__pack-choices-card">
+            <img
+              src="asset/img/packaging/1Dough-TRANS.png"
+              alt="1 DOUGHNUT"
+              class="single-reduce"
+            />
+            <p>SINGLE</p>
+          </div>
+          <div class="main__pack-choices-card">
+            <img src="asset/img/packaging/4Dough-TRANS.png" alt="4 DOUGHNUT" />
+            <p>FOUR</p>
+          </div>
+          <div class="main__pack-choices-card">
+            <img src="asset/img/packaging/6Dough-TRANS.png" alt="6 DOUGHNUT" />
+            <p>SIX</p>
+          </div>
+          <div class="main__pack-choices-card">
+            <img
+              src="asset/img/packaging/12Dough-TRANS.png"
+              alt="12 DOUGHNUT"
+            />
+            <p>DOZEN</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__menu">
+        <div class="main__menu-text" id="menu">
+          <h2>MENU FLAVORS <span>.</span></h2>
+          <p>find your taste</p>
+        </div>
+        <div class="main__menu-options">
+          <div class="main__menu-options-card">
+            <div class="card-color orange">
+              <img
+                src="asset/img/flavors/strawberry-TRANS.png"
+                alt="Strawberry"
+              />
+              <p>Straw-merry</p>
+              <p class="price">55.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color light-pink">
+              <img src="asset/img/flavors/mango-TRANS.png" alt="Mango" />
+              <p>Mang Goes</p>
+              <p class="price">40.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color dark-pink">
+              <img src="asset/img/flavors/banana-TRANS.png" alt="Banana" />
+              <p>Bananuts</p>
+              <p class="price">40.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color light-pink">
+              <img
+                src="asset/img/flavors/tangerine-TRANS.png"
+                alt="Tangerine"
+              />
+              <p>Tangedream</p>
+              <p class="price">45.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color green">
+              <img
+                src="asset/img/flavors/raspberry-TRANS.png"
+                alt="raspberry"
+              />
+              <p>Raspberry-bits</p>
+              <p class="price">55.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color dark-orange">
+              <img src="asset/img/flavors/avocado-TRANS.png" alt="avocado" />
+              <p>Avocadid</p>
+              <p class="price">50.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color dark-pink">
+              <img
+                src="asset/img/flavors/blueberry-TRANS.png"
+                alt="Blueberry"
+              />
+              <p>Blueberry Galaxy</p>
+              <p class="price">50.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color orange">
+              <img src="asset/img/flavors/apple-TRANS.png" alt="Apple" />
+              <p>iApple</p>
+              <p class="price">40.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color green">
+              <img
+                src="asset/img/flavors/chocostrawberry-TRANS.png"
+                alt="Choco-Strawberry"
+              />
+              <p>Strawbelate</p>
+              <p class="price">60.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color dark-orange">
+              <img
+                src="asset/img/flavors/mixed_berries-TRANS.png"
+                alt="mixed_berries"
+              />
+              <p>Halo Berries</p>
+              <p class="price">70.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color light-pink">
+              <img
+                src="asset/img/flavors/avocadopistachio-TRANS.png"
+                alt="Pistachio and Avocado"
+              />
+              <p>Pista-cado</p>
+              <p class="price">55.00</p>
+            </div>
+          </div>
+          <div class="main__menu-options-card">
+            <div class="card-color dark-pink">
+              <img
+                src="asset/img/flavors/peach_mango-TRANS.png"
+                alt="Peach Mango"
+              />
+              <p>Peach Mango <span class="nowrap">Dough-nut-Pie</span></p>
+              <p class="price">50.00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__logo">
+        <div class="footer__logo-container">
+          <a href="#"
+            ><img
+              src="asset/img/logos/DoughtedGray-TRANS.png"
+              alt="doughted-logo"
+          /></a>
+        </div>
+        <div class="footer__logo-socials">
+          <img src="asset/img/socmed/logo-facebook.svg" alt="" />
+          <img src="asset/img/socmed/logo-instagram.svg" alt="" />
+          <img src="asset/img/socmed/logo-tiktok.svg" alt="" />
+        </div>
+      </div>
+      <div class="footer__nav">
+        <ul>
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="terms-condition.html">TERMS AND CONDITION</a></li>
+          <li><a href="feedback.html">FEEDBACK</a></li>
+          <li>
+            <a href="nutrition-guide.html"
+              >NUTRITIONAL AND ALLERGIES INFORMATION</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,21 @@
+.center {
+  margin: 20px 0;
+}
+.sub-title {
+  margin: 15px 0 10px 0;
+  font-family: var(--TITLE-FONT);
+}
+
+.sub-title:hover {
+  color: var(--GREEN);
+}
+
+li::marker {
+  color: var(--ORANGE);
+}
+
+.main__list {
+  font-family: var(--TEXT-FONT);
+  font-weight: 600;
+  margin: 5px 0 15px 0;
+}
