@@ -1,5 +1,5 @@
 header {
-  position: sticky;
+  position: static;
   top: 0;
   left: 0;
   right: 0;
@@ -36,17 +36,21 @@ header {
   flex: 1.5;
   display: flex;
   list-style: none;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
-.header__nav--list a {
+.header__nav--list a,
+.header__nav--list li {
   color: var(--TEXT-COLOR);
   text-decoration: none;
-  margin-right: 100px;
+  /* margin-right: 100px; */
   font-weight: bold;
+  /* flex: 1; */
+  cursor: pointer;
 }
 
-.header__nav--list a:hover {
+.header__nav--list a:hover,
+.header__nav--list li:hover {
   color: var(--DARK-PINK);
   text-decoration: underline;
 }
